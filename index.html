@@ -16,7 +16,20 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
+				<section>Slide 1
+					<h3>Test</h3>
+					<p>
+						\[\begin{aligned}
+						\dot{x} &amp; = \sigma(y-x) \\
+						\dot{y} &amp; = \rho x - y - xz \\
+						\dot{z} &amp; = -\beta z + xy
+						\end{aligned} \]
+
+					</p>
+
+
+
+				</section>
 				<section>Slide 2</section>
 			</div>
 		</div>
@@ -36,5 +49,9 @@
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
+				<script src="plugin/math/math.js"></script>
+				<script>
+				  Reveal.initialize({ plugins: [ RevealMath.KaTeX ] });
+				</script>
 	</body>
 </html>
