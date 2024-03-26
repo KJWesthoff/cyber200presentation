@@ -1,57 +1,194 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1
-					<h3>Test</h3>
-					<p>
-						\[\begin{aligned}
-						\dot{x} &amp; = \sigma(y-x) \\
-						\dot{y} &amp; = \rho x - y - xz \\
-						\dot{z} &amp; = -\beta z + xy
-						\end{aligned} \]
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/KJblack.css">
+	<link rel="stylesheet" href="css/kjcustom.css">
 
-					</p>
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>ISO 27001</h1>
+
+				<aside data-markdown class="notes">
+					<textarea data-template>
+					1) Standards in general (context, to other industries (what it does, how it works etc.))
+					2) About ISO 27001:
+						- Level of abstraction
+						- Revision cycling
+						- How is it implemented (who/how many are actually using it)
+						- Is it good for the future (meta study, contrast and compare)
+
+					3) Interfaces to other standards and regulations
+					4) Conclusion, the development of standards in general (Compare to shipping and electrics) 
+				</textarea>
+
+				</aside>
+
+			</section>
+
+			<section>
+				<section>
+					<h1>Standards in context</h1>
+					<p>A bit on what standards are and how they do in other industries</p>
+
+					<aside  data-markdown class="notes">
+						<textarea data-template >
+							Standards have been around forever, initially as measurements in trading.
+							Later during the Industrial revolution as a way to create interchangeable parts
+							Standardization is a part og maturing processes and Business..
+						</textarea>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Shipping</h2>
+					Special case
+					(with some odd similarities to the internet):
 
 
+					<div class="row">
+						<div class="column fragment fade-left">
+							<h6>Similar</h6>
+							<ul>
+								<li>Handles goods in transit</li>
+								<li>Travels through international waters</li>
+								<li>Sometimes, malicious content is transported in packages</li>
+							</ul>
+						</div>
+						<div class="column fragment fade-right">
+							<h6>Different</h6>
+							<ul>
+								<li>B2B Only</li>
+								<li>Large Single, Insured Assets</li>
+								<li>Highly Regulated</li>
+							</ul>
+						</div>
+					</div>
+
+					<aside data-markdown class="notes">
+						<textarea data-template >
+							Standardization (classification) in shipping is a prerequisite to getting your ship. 
+							financed, insured and to allow it to enter a country/harbor.
+
+							You are free to sail the oceans, but you may ve denied access if you don't comply with the rules, 
+							but there is also a "dark web" of shadow ships, that pose a danger to safety and traffics assets around the world (Ghost Ships). 
+							
+							During conflict civilian shipping are regarded as targets (akin to the dilemmas of Cyber war).
+							He who controls the ocean controls world trade. 
+						</textarea>
+					</aside>
 
 				</section>
-				<section>Slide 2</section>
-			</div>
+				<section>
+					<h2>Standards in Shipping</h2>
+					IMO -> classification (technical details) -> Asset Insured
+					 
+
+					<aside data-markdown="" class="notes">
+						<textarea data-template >
+							Standardization is handled at a high level by international treaties by IMO (International
+							Maritime Organization) which is an organization under the United Nations
+							These rules and regulations are then enabled at a more practical level by entities called
+							classification societies, which are often non-profit private organizations
+							Detailed technical rules on how to build a ship.
+						</textarea>
+					</aside>
+				</section>
+
+
+				<section>
+					<h1>The Electrical Grid</h1>
+
+					<div class="row">
+						<div class="column fragment fade-left">
+							<h6>Similar</h6>
+							<ul>
+								<li>Both Consumer and Business</li>
+								<li>Infrastructure that is highly privatized</li>
+							</ul>
+						</div>
+						<div class="column fragment fade-right">
+							<h6>Different</h6>
+							<ul>
+								<li>Single, Traded Commodity</li>
+								<li>Limited, Controlled Networks</li>
+							</ul>
+						</div>
+					</div>	
+				
+					</p>
+				</section>
+				<section>Conclusion
+					<p>
+						Standards often feel wired or not the most rational, as they a often "solidified rather than
+						cast in a mold"
+						The ISO and other standards we meet in Cyber security, may seem out of place and old fashioned
+						in a "move fast and break stuff context"
+						People are often claiming: "They are too fluffy and cover nothing", they are
+					</p>
+				</section>
+			</section>
+
+
+
+
+			</section>
+
+
+
+			</section>
+
+			<section>d3test
+				<div class="fig-container" data-file="d3animations/d3test.html">Anything?</div>
+			</section>
+			<section>Horizontal Slide</section>
+			<section>
+				<section>Vertical Slide 1</section>
+				<section>Vertical Slide 2</section>
+			</section>
+			<section>Conclusion
+				<p>
+					Standards are critically needed in cybersecurity, it is shocking how much is left unregulated in the
+					hands of business
+					(with the whole context thereo (short sighted ness)(only answering ot shareholders) etc..))
+				</p>
+			</section>
+
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/reveald3.js"></script>
+	<script src="plugin/math/math.js"></script>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-				<script src="plugin/math/math.js"></script>
-				<script>
-				  Reveal.initialize({ plugins: [ RevealMath.KaTeX ] });
-				</script>
-	</body>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, Reveald3, RevealMath.KaTeX]
+		});
+	</script>
+
+</body>
+
 </html>
