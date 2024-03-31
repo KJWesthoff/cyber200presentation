@@ -1,0 +1,278 @@
+[
+    {
+        "name": "ISO/IEC 27001",
+        "type": "standard",
+        "industry": "General",
+        "link": "https://www.iso.org/isoiec-27001-information-security.html"
+    },
+    {
+        "name": "NIST Cybersecurity Framework",
+        "type": "framework",
+        "industry": "General",
+        "link": "https://www.nist.gov/cyberframework"
+    },
+    {
+        "name": "PCI DSS",
+        "type": "standard",
+        "industry": "Payment Card Industry",
+        "link": "https://www.pcisecuritystandards.org/"
+    },
+    {
+        "name": "HIPAA Security Rule",
+        "type": "standard",
+        "industry": "Healthcare",
+        "link": "https://www.hhs.gov/hipaa/for-professionals/security/index.html"
+    },
+    {
+        "name": "GDPR",
+        "type": "standard",
+        "industry": "General Data Protection Regulation",
+        "link": "https://gdpr-info.eu/"
+    },
+    {
+        "name": "COBIT",
+        "type": "framework",
+        "industry": "General",
+        "link": "https://www.isaca.org/resources/cobit"
+    },
+    {
+        "name": "FISMA",
+        "type": "standard",
+        "industry": "Government",
+        "link": "https://www.nist.gov/topics/cybersecurity/federal-information-security-modernization-act-fisma"
+    },
+    {
+        "name": "NIST SP 800-53",
+        "type": "standard",
+        "industry": "Government",
+        "link": "https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final"
+    },
+    {
+        "name": "CIS Controls",
+        "type": "framework",
+        "industry": "General",
+        "link": "https://www.cisecurity.org/controls/"
+    },
+    {
+        "name": "NERC CIP",
+        "type": "standard",
+        "industry": "Utilities",
+        "link": "https://www.nerc.com/pa/Stand/Pages/CIPStandards.aspx"
+    },
+    {
+        "name": "ISO/IEC 27002",
+        "type": "standard",
+        "industry": "General",
+        "link": "https://www.iso.org/standard/54533.html"
+    },
+    {
+        "name": "ITIL",
+        "type": "framework",
+        "industry": "IT Service Management",
+        "link": "https://www.axelos.com/best-practice-solutions/itil"
+    },
+    {
+        "name": "CSA Cloud Controls Matrix",
+        "type": "framework",
+        "industry": "Cloud Computing",
+        "link": "https://cloudsecurityalliance.org/research/cloud-controls-matrix/"
+    },
+    {
+        "name": "CMMC",
+        "type": "standard",
+        "industry": "Defense Industrial Base",
+        "link": "https://www.acq.osd.mil/cmmc/"
+    },
+    {
+        "name": "ISO/IEC 27701",
+        "type": "standard",
+        "industry": "Privacy",
+        "link": "https://www.iso.org/standard/71670.html"
+    },
+    {
+        "name": "CIS Benchmarks",
+        "type": "framework",
+        "industry": "General",
+        "link": "https://www.cisecurity.org/cis-benchmarks/"
+    },
+    {
+        "name": "ISO/IEC 22301",
+        "type": "standard",
+        "industry": "Business Continuity",
+        "link": "https://www.iso.org/standard/50032.html"
+    },
+    {
+        "name": "ISO/IEC 15408 (Common Criteria)",
+        "type": "standard",
+        "industry": "General",
+        "link": "https://www.commoncriteriaportal.org/cc/"
+    },
+    {
+        "name": "FFIEC Cybersecurity Assessment Tool",
+        "type": "framework",
+        "industry": "Finance",
+        "link": "https://www.ffiec.gov/cyberassessmenttool.htm"
+    },
+    {
+        "name": "ISO/IEC 20000",
+        "type": "standard",
+        "industry": "IT Service Management",
+        "link": "https://www.iso.org/isoiec-20000-it-service-management.html"
+    },
+    {
+        "name": "ISO/IEC 38500",
+        "type": "standard",
+        "industry": "Governance of IT",
+        "link": "https://www.iso.org/isoiec-38500-governance-of-it-for-the-organization.html"
+    },
+    {
+        "name": "BSI IT-Grundschutz",
+        "type": "framework",
+        "industry": "German Federal Office for Information Security",
+        "link": "https://www.bsi.bund.de/EN/Topics/ITGrundschutz/itgrundschutz_node.html"
+    },
+    {
+        "name": "MITRE ATT&CK",
+        "type": "framework",
+        "industry": "Cyber Threat Intelligence",
+        "link": "https://attack.mitre.org/"
+    },
+    {
+        "name": "NIST Privacy Framework",
+        "type": "framework",
+        "industry": "General",
+        "link": "https://www.nist.gov/privacy-framework"
+    },
+    {
+        "name": "ISO/IEC 27005",
+        "type": "standard",
+        "industry": "Risk Management",
+        "link": "https://www.iso.org/isoiec-27005-risk-management.html"
+    },
+    {
+        "name": "COSO",
+        "type": "framework",
+        "industry": "Internal Controls",
+        "link": "https://www.coso.org/Pages/default.aspx"
+    },
+    {
+        "name": "ISO/IEC 31000",
+        "type": "standard",
+        "industry": "Risk Management",
+        "link": "https://www.iso.org/iso-31000-risk-management.html"
+    },
+    {
+        "name": "ISO/IEC 30111",
+        "type": "standard",
+        "industry": "Vulnerability Handling Processes",
+        "link": "https://www.iso.org/standard/45134.html"
+    },
+    {
+        "name": "ISA/IEC 62443",
+        "type": "standard",
+        "industry": "Industrial Automation and Control Systems",
+        "link": "https://www.isa.org/standards-and-publications/isa-standards/isa-standards-committees"
+    },
+    {
+        "name": "NIST SP 800-171",
+        "type": "standard",
+        "industry": "Government Contractors",
+        "link": "https://csrc.nist.gov/publications/detail/sp/800-171/rev-2/final"
+    },
+    {
+        "name": "ISO/IEC 27017",
+        "type": "standard",
+        "industry": "Cloud Security",
+        "link": "https://www.iso.org/standard/65658.html"
+    },
+    {
+        "name": "BSI TR-03148",
+        "type": "standard",
+        "industry": "Electronic Identification and Trust Services",
+        "link": "https://www.bsi.bund.de/EN/Topics/ElectronicIDTrustServices/eIDTrustServices_node.html"
+    },
+    {
+        "name": "ISO/IEC 27019",
+        "type": "standard",
+        "industry": "Energy Sector",
+        "link": "https://www.iso.org/standard/51738.html"
+    },
+    {
+        "name": "OWASP Application Security Verification Standard (ASVS)",
+        "type": "standard",
+        "industry": "Web Application Security",
+        "link": "https://owasp.org/www-project-application-security-verification-standard/"
+    },
+    {
+        "name": "ISO/IEC 30121",
+        "type": "standard",
+        "industry": "Cybersecurity Incident Management",
+        "link": "https://www.iso.org/standard/72403.html"
+    },
+    {
+        "name": "ISO/IEC 27034",
+        "type": "standard",
+        "industry": "Application Security",
+        "link": "https://www.iso.org/standard/75126.html"
+    },
+    {
+        "name": "NIST SP 800-90A",
+        "type": "standard",
+        "industry": "Cryptographic Algorithms",
+        "link": "https://csrc.nist.gov/publications/detail/sp/800-90a/rev-1/final"
+    },
+    {
+        "name": "ISO/IEC 29147",
+        "type": "standard",
+        "industry": "Vulnerability Disclosure",
+        "link": "https://www.iso.org/standard/45133.html"
+    },
+    {
+        "name": "ISA/IEC 62443",
+        "type": "standard",
+        "industry": "Industrial Automation and Control Systems",
+        "link": "https://www.isa.org/standards-and-publications/isa-standards/isa-standards-committees"
+    },
+    {
+        "name": "ISO/IEC 27036",
+        "type": "standard",
+        "industry": "Security for Supplier Relationships",
+        "link": "https://www.iso.org/standard/62960.html"
+    },
+    {
+        "name": "NIST SP 800-63",
+        "type": "standard",
+        "industry": "Identity Assurance",
+        "link": "https://csrc.nist.gov/publications/detail/sp/800-63b/final"
+    },
+    {
+        "name": "ISO/IEC 15443",
+        "type": "standard",
+        "industry": "Security Controls for Financial Services",
+        "link": "https://www.iso.org/standard/38267.html"
+    },
+    {
+        "name": "NIST SP 800-45",
+        "type": "standard",
+        "industry": "Guidelines on Electronic Mail Security",
+        "link": "https://csrc.nist.gov/publications/detail/sp/800-45/final"
+    },
+    {
+        "name": "ISO/IEC 24762",
+        "type": "standard",
+        "industry": "Guidelines for Information and Communications Technology Disaster Recovery Services",
+        "link": "https://www.iso.org/standard/59606.html"
+    },
+    {
+        "name": "NIST SP 800-41",
+        "type": "standard",
+        "industry": "Guidelines on Firewalls and Firewall Policy",
+        "link": "https://csrc.nist.gov/publications/detail/sp/800-41/rev-1/final"
+    },
+    {
+        "name": "ISO/IEC 27033",
+        "type": "standard",
+        "industry": "Network Security",
+        "link": "https://www.iso.org/standard/68508.html"
+    }
+]

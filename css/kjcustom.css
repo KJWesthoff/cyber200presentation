@@ -18,3 +18,8 @@
     flex-basis: 80%;
     flex: 1;
 }
+
+circle {
+    fill: orange;
+  }
+  

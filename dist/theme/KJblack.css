@@ -12,7 +12,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --r-background-color: #07072b;
+  --r-background-color: #003262;
   --r-main-font: Source Sans Pro, Helvetica, sans-serif;
   --r-main-font-size: 42px;
   --r-main-color: #fff;
@@ -41,7 +41,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 }
 
 .reveal-viewport {
-  background: #07072b;
+  background: #003262;
   background-color: var(--r-background-color);
 }
 

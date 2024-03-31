@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<body>
+  <div id="content">
+    <svg></svg>
+  </div>
+
+  <script src="/js/d3.v3.js"></script>
+  <script>
+
+
+
+
+    const getData = async () => {
+      const data = await d3.json("Standards.json", (d) => {
+        doAnimation(d)
+      })
+
+
+
+
+
+
+      return data
+    }
+
+
+    getData()
+
+
+    doAnimation = function (data) {
+
+      var width = 960,
+        height = 500;
+
+      var nodes = data.map(function (d) {
+
+        return {
+          radius: Math.random() * 12 + 4,
+          text: d.name,
+          link: d.link,
+          type: d.type,
+          industry: d.industry
+        };
+
+      }),
+        root = nodes[0],
+        color = d3.scale.category10();
+
+
+
+
+      root.radius = 0;
+      root.fixed = true;
+
+      var force = d3.layout.force()
+        .gravity(0.05)
+        .charge(function (d, i) { return i ? 0 : -2000; })
+        .nodes(nodes)
+        .size([width, height]);
+
+      force.start();
+
+      var svg = d3.select("body").append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+
+
+      let texts = svg.selectAll("text")
+        .data(nodes.slice(1))
+        .enter().append("text")
+        .text(d => d.text)
+        .style("font-size", 20)
+        .style("text-anchor", "middle")
+        .style("fill", "white")
+        .attr("font-weight", 100)
+        .style("font-family", "Source Sans Pro, Helvetica, sans-serif")
+
+
+      force.on("tick", function (e) {
+        var q = d3.geom.quadtree(texts[0]),
+          i = 0,
+          n = texts[0].length;
+
+        while (++i < n - 1) q.visit(collide(texts[0][i].getBBox()));
+
+        svg.selectAll("text")
+          .attr("x", function (d) { return d.x; })
+          .attr("y", function (d) { return d.y; });
+      });
+
+
+      svg.on("mousemove", function () {
+        var p1 = d3.mouse(this);
+        root.px = p1[0];
+        root.py = p1[1];
+        force.resume();
+      });
+
+
+      function collide(node) {
+        var nx1, nx2, ny1, ny2, padding;
+        nx1 = node.x - node.width / 2;
+        nx2 = node.x2 + node.width / 2;
+        ny1 = node.y - node.height / 2;
+        ny2 = node.y2 + node.height / 2;
+
+
+        return function (quad, x1, y1, x2, y2) {
+          var dx, dy;
+          if (quad.point && (quad.point !== node)) {
+            if (overlap(node, quad.point)) {
+              dx = Math.min(node.x2 - quad.point.x, quad.point.x2 - node.x) / 2;
+              node.x -= dx;
+              quad.point.x += dx;
+              dy = Math.min(node.y2 - quad.point.y, quad.point.y2 - node.y) / 2;
+              node.y -= dy;
+              quad.point.y += dy;
+            }
+          }
+          return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+        };
+      };
+
+
+    }
+  </script>

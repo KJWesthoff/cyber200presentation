@@ -1,0 +1,560 @@
+[
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.1",
+      "Name": "Policies for information security",
+      "Control": "Information security policy and topic-specific policies shall be de-fined, approved by management, published, communicated to andacknowledged by relevant personnel and relevant interested parties,and reviewed at planned intervals and if significant changes occur."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.2",
+      "Name": "Information security roles and responsibilities",
+      "Control": "Information security roles and responsibilities shall be defined andallocated according to the organization needs."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.3",
+      "Name": "Segregation of duties",
+      "Control": "Conflicting duties and conflicting areas of responsibility shall be seg-regated."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.4",
+      "Name": "Management responsibilities",
+      "Control": "Management shall require all personnel to apply information securityin accordance with the established information security policy, top-ic-specific policies and procedures of the organization."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.5",
+      "Name": "Contact with authorities",
+      "Control": "The organization shall establish and maintain contact with relevantauthorities."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.6",
+      "Name": "Contact with special interest groups",
+      "Control": "The organization shall establish and maintain contact with specialinterest groups or other specialist security forums and professionalassociations."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.7",
+      "Name": "Threat intelligence",
+      "Control": "Information relating to information security threats shall be collectedand analysed to produce threat intelligence."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.8",
+      "Name": "Information security in project management",
+      "Control": "Information security shall be integrated into project management."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.9",
+      "Name": "Inventory of information and other associated assets",
+      "Control": "An inventory of information and other associated assets, includingowners, shall be developed and maintained."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.10",
+      "Name": "Acceptable use of information and other associated assets",
+      "Control": "Rules for the acceptable use and procedures for handling information andother associated assets shall be identified, documented and implemented."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.11",
+      "Name": "Return of assets",
+      "Control": "Personnel and other interested parties as appropriate shall return allthe organization’s assets in their possession upon change or terminationof their employment, contract or agreement."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.12",
+      "Name": "Classification of information",
+      "Control": "Information shall be classified according to the information securityneeds of the organization based on confidentiality, integrity, availabilityand relevant interested party requirements."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.13",
+      "Name": "Labelling of information",
+      "Control": "An appropriate set of procedures for information labelling shall bedeveloped and implemented in accordance with the information clas-sification scheme adopted by the organization."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.14",
+      "Name": "Information transfer",
+      "Control": "Information transfer rules, procedures, or agreements shall be in placefor all types of transfer facilities within the organization and betweenthe organization and other parties."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.15",
+      "Name": "Access control",
+      "Control": "Rules to control physical and logical access to information and otherassociated assets shall be established and implemented based on busi-ness and information security requirements."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.16",
+      "Name": "Identity management",
+      "Control": "The full life cycle of identities shall be managed."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.17",
+      "Name": "Authentication information",
+      "Control": "Allocation and management of authentication information shall becontrolled by a management process, including advising personnel onappropriate handling of authentication information."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.18",
+      "Name": "Access rights",
+      "Control": "Access rights to information and other associated assets shall beprovisioned, reviewed, modified and removed in accordance with theorganization’s topic-specific policy on and rules for access control."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.19",
+      "Name": "Information security in supplier relationships",
+      "Control": "Processes and procedures shall be defined and implemented to managethe information security risks associated with the use of supplier’sproducts or services."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.20",
+      "Name": "Addressing information security within supplier agreements",
+      "Control": "Relevant information security requirements shall be established andagreed with each supplier based on the type of supplier relationship."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.21",
+      "Name": "Managing information security in the information and communication technology (ICT) supply chain",
+      "Control": "Processes and procedures shall be defined and implemented to managethe information security risks associated with the ICT products and services supply chain."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.22",
+      "Name": "Monitoring, review and change management of supplier services",
+      "Control": "The organization shall regularly monitor, review, evaluate and managechange in supplier information security practices and service delivery."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.23",
+      "Name": "Information security for use of cloud services",
+      "Control": "Processes for acquisition, use, management and exit from cloud servicesshall be established in accordance with the organization’s informationsecurity requirements."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.24",
+      "Name": "Information security incident management planning and preparation",
+      "Control": "The organization shall plan and prepare for managing information security incidents by defining, establishing and communicating informationsecurity incident management processes, roles and responsibilities."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.25",
+      "Name": "Assessment and decision on information security events",
+      "Control": "The organization shall assess information security events and decide ifthey are to be categorized as information security incidents."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.26",
+      "Name": "Response to information security incidents",
+      "Control": "Information security incidents shall be responded to in accordance withthe documented procedures."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.27",
+      "Name": "Learning from information security incidents",
+      "Control": "Knowledge gained from information security incidents shall be used tostrengthen and improve the information security controls."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.28",
+      "Name": "Collection of evidence",
+      "Control": "The organization shall establish and implement procedures for the iden-tification, collection, acquisition and preservation of evidence relatedto information security events."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.29",
+      "Name": "Information security during disruption",
+      "Control": "The organization shall plan how to maintain information security at anappropriate level during disruption."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.30",
+      "Name": "ICT readiness for business continuity",
+      "Control": "ICT readiness shall be planned, implemented, maintained and testedbased on business continuity objectives and ICT continuity requirements."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.31",
+      "Name": "Legal, statutory, regulatory and contractual requirements",
+      "Control": "Legal, statutory, regulatory and contractual requirements relevant toinformation security and the organization’s approach to meet theserequirements shall be identified, documented and kept up to date."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.32",
+      "Name": "Intellectual property rights",
+      "Control": "The organization shall implement appropriate procedures to protectintellectual property rights."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.33",
+      "Name": "Protection of records",
+      "Control": "Records shall be protected from loss, destruction, falsification, unau-thorized access and unauthorized release."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.34",
+      "Name": "Privacy and protection of person al identifiable information (PII)",
+      "Control": "The organization shall identify and meet the requirements regardingthe preservation of privacy and protection of PII according to applicablelaws and regulations and contractual requirements."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.35",
+      "Name": "Independent review of information security",
+      "Control": "The organization’s approach to managing information security andits implementation including people, processes and technologies shallbe reviewed independently at planned intervals, or when significantchanges occur."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.36",
+      "Name": "Compliance with policies, rules Control\nand standards for information security",
+      "Control": "Compliance with the organization’s information security policy, topic-specific policies, rules and standards shall be regularly reviewed."
+    },
+    {
+      "Category": "5 Organizational controls",
+      "No": "5.37",
+      "Name": "Documented operating procedures",
+      "Control": "Operating procedures for information processing facilities shall bedocumented and made available to personnel who need them."
+    },
+    {
+      "Category": "6 People controls",
+      "No": "6.1",
+      "Name": "Screening",
+      "Control": "Background verification checks on all candidates to become personnelshall be carried out prior to joining the organization and on an ongoingbasis taking into consideration applicable laws, regulations and ethicsand be proportional to the business requirements, the classification ofthe information to be accessed and the perceived risks."
+    },
+    {
+      "Category": "6 People controls",
+      "No": "6.2",
+      "Name": "Terms and conditions of employment",
+      "Control": "The employment contractual agreements shall state the personnel’s andthe organization’s responsibilities for information security."
+    },
+    {
+      "Category": "6 People controls",
+      "No": "6.3",
+      "Name": "nformation security awareness, education and training",
+      "Control": "Personnel of the organization and relevant interested parties shall receiveappropriate information security awareness, education and trainingand regular updates of the organization's information security policy,topic-specific policies and procedures, as relevant for their job function."
+    },
+    {
+      "Category": "6 People controls",
+      "No": "6.4",
+      "Name": "Disciplinary process",
+      "Control": "A disciplinary process shall be formalized and communicated to takeactions against personnel and other relevant interested parties whohave committed an information security policy violation."
+    },
+    {
+      "Category": "6 People controls",
+      "No": "6.5",
+      "Name": "Responsibilities after termination or change of employment",
+      "Control": "Information security responsibilities and duties that remain valid aftertermination or change of employment shall be defined, enforced andcommunicated to relevant personnel and other interested parties"
+    },
+    {
+      "Category": "6 People controls",
+      "No": "6.6",
+      "Name": "Confidentiality or non-disclosure agreements",
+      "Control": "Confidentiality or non-disclosure agreements reflecting the organ-ization’s needs for the protection of information shall be identified,documented, regularly reviewed and signed by personnel and otherrelevant interested parties."
+    },
+    {
+      "Category": "6 People controls",
+      "No": "6.7",
+      "Name": "Remote working",
+      "Control": "Security measures shall be implemented when personnel are workingremotely to protect information accessed, processed or stored outsidethe organization’s premises."
+    },
+    {
+      "Category": "6 People controls",
+      "No": "6.8",
+      "Name": "Information security event porting",
+      "Control": "The organization shall provide a mechanism for personnel to reportobserved or suspected information security events through appropriatechannels in a timely manner."
+    },
+    {
+      "Category": "7 Physical controls",
+      "No": "7.1",
+      "Name": "Physical security perimeters",
+      "Control": "Security perimeters shall be defined and used to protect areas thatcontain information and other associated assets."
+    },
+    {
+      "Category": "7 Physical controls",
+      "No": "7.2",
+      "Name": "Physical entry",
+      "Control": "Secure areas shall be protected by appropriate entry controls andaccess points."
+    },
+    {
+      "Category": "7 Physical controls",
+      "No": "7.3",
+      "Name": "Securing offices, rooms and facilities",
+      "Control": "Physical security for offices, rooms and facilities shall be designed andimplemented."
+    },
+    {
+      "Category": "7 Physical controls",
+      "No": "7.4",
+      "Name": "Physical security monitoring",
+      "Control": "Premises shall be continuously monitored for unauthorized physicalaccess."
+    },
+    {
+      "Category": "7 Physical controls",
+      "No": "7.5",
+      "Name": "Protecting against physical and environmental threats",
+      "Control": "Protection against physical and environmental threats, such as naturaldisasters and other intentional or unintentional physical threats toinfrastructure shall be designed and implemented."
+    },
+    {
+      "Category": "7 Physical controls",
+      "No": "7.6",
+      "Name": "Working in secure areas",
+      "Control": "Security measures for working in secure areas shall be designed andimplemented."
+    },
+    {
+      "Category": "7 Physical controls",
+      "No": "7.7",
+      "Name": "Clear desk and clear screen",
+      "Control": "Clear desk rules for papers and removable storage media and clearscreen rules for information processing facilities shall be defined andappropriately enforced."
+    },
+    {
+      "Category": "7 Physical controls",
+      "No": "7.8",
+      "Name": "Equipment siting and protection",
+      "Control": "Equipment shall be sited securely and protected."
+    },
+    {
+      "Category": "7 Physical controls",
+      "No": "7.9",
+      "Name": "Security of assets off-premises",
+      "Control": "Off-site assets shall be protected."
+    },
+    {
+      "Category": "7 Physical controls",
+      "No": "7.10",
+      "Name": "Storage media",
+      "Control": "Storage media shall be managed through their life cycle of acquisition,use, transportation and disposal in accordance with the organization’sclassification scheme and handling requirements."
+    },
+    {
+      "Category": "7 Physical controls",
+      "No": "7.11",
+      "Name": "Supporting utilities",
+      "Control": "Information processing facilities shall be protected from power failuresand other disruptions caused by failures in supporting utilities."
+    },
+    {
+      "Category": "7 Physical controls",
+      "No": "7.12",
+      "Name": "Cabling security",
+      "Control": "Cables carrying power, data or supporting information services shallbe protected from interception, interference or damage."
+    },
+    {
+      "Category": "7 Physical controls",
+      "No": "7.13",
+      "Name": "Equipment maintenance",
+      "Control": "Equipment shall be maintained correctly to ensure availability, integrityand confidentiality of information."
+    },
+    {
+      "Category": "7 Physical controls",
+      "No": "7.14",
+      "Name": "Secure disposal or re-use of equipment",
+      "Control": "Items of equipment containing storage media shall be verified to en-sure that any sensitive data and licensed software has been removedor securely overwritten prior to disposal or re-use."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.1",
+      "Name": "User end point devices",
+      "Control": "Information stored on, processed by or accessible via user end pointdevices shall be protected."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.2",
+      "Name": "Privileged access rights",
+      "Control": "The allocation and use of privileged access rights shall be restrictedand managed."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.3",
+      "Name": "Information access restriction",
+      "Control": "Access to information and other associated assets shall be restricted inaccordance with the established topic-specific policy on access control."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.4",
+      "Name": "Access to source code",
+      "Control": "Read and write access to source code, development tools and softwarelibraries shall be appropriately managed."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.5",
+      "Name": "Secure authentication",
+      "Control": "Secure authentication technologies and procedures shall be implementedbased on information access restrictions and the topic-specific policyon access control."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.6",
+      "Name": "Capacity management",
+      "Control": "The use of resources shall be monitored and adjusted in line with currentand expected capacity requirements."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.7",
+      "Name": "Protection against malware",
+      "Control": "Protection against malware shall be implemented and supported byappropriate user awareness."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.8",
+      "Name": "Management of technical vulnerabilities",
+      "Control": "Information about technical vulnerabilities of information systems inuse shall be obtained, the organization’s exposure to such vulnerabilitiesshall be evaluated and appropriate measures shall be taken."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.9",
+      "Name": "Configuration management",
+      "Control": "Configurations, including security configurations, of hardware, software,services and networks shall be established, documented, implemented,monitored and reviewed."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.10",
+      "Name": "Information deletion",
+      "Control": "Information stored in information systems, devices or in any otherstorage media shall be deleted when no longer required."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.11",
+      "Name": "Data masking",
+      "Control": "Data masking shall be used in accordance with the organization’stopic-specific policy on access control and other related topic-specificpolicies, and business requirements, taking applicable legislation intoconsideration."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.12",
+      "Name": "Data leakage prevention",
+      "Control": "Data leakage prevention measures shall be applied to systems, net-works and any other devices that process, store or transmit sensitiveinformation."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.13",
+      "Name": "Information backup",
+      "Control": "Backup copies of information, software and systems shall be maintainedand regularly tested in accordance with the agreed topic-specific policyon backup."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.14",
+      "Name": "Redundancy of information processing facilities",
+      "Control": "Information processing facilities shall be implemented with redundancysufficient to meet availability requirements."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.15",
+      "Name": "Logging",
+      "Control": "Logs that record activities, exceptions, faults and other relevant eventsshall be produced, stored, protected and analysed."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.16",
+      "Name": "Monitoring activities",
+      "Control": "Networks, systems and applications shall be monitored for anomalousbehaviour and appropriate actions taken to evaluate potential infor-mation security incidents."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.17",
+      "Name": "Clock synchronization",
+      "Control": "The clocks of information processing systems used by the organizationshall be synchronized to approved time sources."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.18",
+      "Name": "Use of privileged utility programs",
+      "Control": "The use of utility programs that can be capable of overriding systemand application controls shall be restricted and tightly controlled."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.19",
+      "Name": "Installation of software on operational systems",
+      "Control": "Procedures and measures shall be implemented to securely managesoftware installation on operational systems."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.20",
+      "Name": "Networks security",
+      "Control": "Networks and network devices shall be secured, managed and controlledto protect information in systems and applications."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.21",
+      "Name": "Security of network services",
+      "Control": "Security mechanisms, service levels and service requirements of networkservices shall be identified, implemented and monitored."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.22",
+      "Name": "Segregation of networks",
+      "Control": "Groups of information services, users and information systems shallbe segregated in the organization’s networks."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.23",
+      "Name": "Web filtering",
+      "Control": "Access to external websites shall be managed to reduce exposure tomalicious content."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.24",
+      "Name": "Use of cryptography",
+      "Control": "Rules for the effective use of cryptography, including cryptographic keymanagement, shall be defined and implemented."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.25",
+      "Name": "Secure development life cycle",
+      "Control": "Rules for the secure development of software and systems shall beestablished and applied."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.26",
+      "Name": "Application security requirements",
+      "Control": "Information security requirements shall be identified, specified andapproved when developing or acquiring applications."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.27",
+      "Name": "Secure system architecture and engineering principles",
+      "Control": "Principles for engineering secure systems shall be established, docu-mented, maintained and applied to any information system developmentactivities."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.28",
+      "Name": "Secure coding",
+      "Control": "Secure coding principles shall be applied to software development."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.29",
+      "Name": "Security testing in development and acceptance",
+      "Control": "Security testing processes shall be defined and implemented in thedevelopment life cycle."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.30",
+      "Name": "Outsourced development",
+      "Control": "The organization shall direct, monitor and review the activities relatedto outsourced system development."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.31",
+      "Name": "Separation of development, test and production environments",
+      "Control": "Development, testing and production environments shall be separatedand secured."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.32",
+      "Name": "Change management",
+      "Control": "Changes to information processing facilities and information systemsshall be subject to change management procedures."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.33",
+      "Name": "Test information",
+      "Control": "Test information shall be appropriately selected, protected and managed."
+    },
+    {
+      "Category": "8 Technological controls",
+      "No": "8.34",
+      "Name": "Protection of information systems during audit testing",
+      "Control": "Audit tests and other assurance activities involving assessment of op-erational systems shall be planned and agreed between the tester andappropriate management."
+    }
+  ]
