@@ -6,7 +6,7 @@
         "link": "https://www.iso.org/isoiec-27001-information-security.html"
     },
     {
-        "name": "NIST Cybersecurity Framework",
+        "name": "NIST",
         "type": "framework",
         "industry": "General",
         "link": "https://www.nist.gov/cyberframework"
@@ -18,7 +18,7 @@
         "link": "https://www.pcisecuritystandards.org/"
     },
     {
-        "name": "HIPAA Security Rule",
+        "name": "HIPAA",
         "type": "standard",
         "industry": "Healthcare",
         "link": "https://www.hhs.gov/hipaa/for-professionals/security/index.html"
@@ -72,7 +72,7 @@
         "link": "https://www.axelos.com/best-practice-solutions/itil"
     },
     {
-        "name": "CSA Cloud Controls Matrix",
+        "name": "CSA",
         "type": "framework",
         "industry": "Cloud Computing",
         "link": "https://cloudsecurityalliance.org/research/cloud-controls-matrix/"
@@ -102,13 +102,13 @@
         "link": "https://www.iso.org/standard/50032.html"
     },
     {
-        "name": "ISO/IEC 15408 (Common Criteria)",
+        "name": "ISO/IEC 15408",
         "type": "standard",
         "industry": "General",
         "link": "https://www.commoncriteriaportal.org/cc/"
     },
     {
-        "name": "FFIEC Cybersecurity Assessment Tool",
+        "name": "FFIEC",
         "type": "framework",
         "industry": "Finance",
         "link": "https://www.ffiec.gov/cyberassessmenttool.htm"
@@ -138,7 +138,7 @@
         "link": "https://attack.mitre.org/"
     },
     {
-        "name": "NIST Privacy Framework",
+        "name": "NIST",
         "type": "framework",
         "industry": "General",
         "link": "https://www.nist.gov/privacy-framework"
@@ -198,7 +198,7 @@
         "link": "https://www.iso.org/standard/51738.html"
     },
     {
-        "name": "OWASP Application Security Verification Standard (ASVS)",
+        "name": "OWASP",
         "type": "standard",
         "industry": "Web Application Security",
         "link": "https://owasp.org/www-project-application-security-verification-standard/"

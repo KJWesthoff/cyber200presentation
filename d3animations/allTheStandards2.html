@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<body>
+  <script src="//d3js.org/d3.v3.min.js"></script>
+  <script>
+
+    var width = 960,
+      height = 500;
+
+
+    // Berkeley blue '#003262'
+    var berkeleyColors = ['white', '#FDB515', '#3B7EA1', '#C4820E', '#D9661F', '#EE1F60', '#ED4E33', '#6C3302', '#DDD5C7', '#00B0DA', '#00A598', '#46535E', '#B9D3B6', '#CFDD45', '#859438', '#584F29']
+
+
+
+
+    // main fetch and run
+    const getData = async () => {
+      const data = await d3.json("Standards.json", (d) => {
+        doAnimation(d)
+
+        var industries = d.map(d => d.industry)
+        industries = [... new Set(industries)]
+
+        var types = d.map(d => d.type)
+        types = [... new Set(types)]
+
+        console.log(types)
+
+
+      })
+
+    }
+    getData()
+
+    const doAnimation = function (data) {
+
+
+      // initialize/condition/add some random start data
+      var nodes = data.map(function (d) {
+
+        color = d3.scale.category10();
+
+
+        var velocity = Math.random() * 2 + 1
+        var angle = Math.random() * 360
+
+
+        return {
+          text: d.name,
+          link: d.link,
+          type: d.type,
+          industry: d.industry,
+          radius: Math.random() * 12 + 25
+
+        }
+      });
+
+
+
+
+
+      root = nodes[0],
+        root.fixed = true;
+      root.radius = 50
+
+
+
+
+
+      var force = d3.layout.force()
+        .gravity(0.05)
+        .charge(function (d, i) { return i ? 0 : -2000; })
+        .nodes(nodes)
+        .size([width, height]);
+
+      force.start();
+
+      var svg = d3.select("body").append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+      var isoBlob = svg.selectAll("circle")
+        .data(nodes.slice(0, 1))
+        .enter().append("circle")
+        .attr("r", 150)
+        .attr("stroke-width", 2)
+        .attr("stroke", "white")
+        .style("stroke-dasharray", ("10,3")) // make the stroke dashed
+        .style("fill", '#003262')
+
+      var anchors = svg.selectAll("g")
+        .data(nodes)
+        .enter()
+
+
+      anchors.append("text")
+        .text(d => d.text)
+        .attr("x", (d) => d.x)
+        .attr("y", (d) => d.y)
+        .style("font-size", 35)
+        .style("text-anchor", "middle")
+        .attr("stroke-width", 1)
+        .attr("stroke", '#FDB515')
+        .style("stroke-dasharray", d => {
+
+          if (d.type == 'framework') {
+            return ("3,2")
+          }
+
+
+
+        }) // make the stroke dashed
+        .style("fill", function (d, i) {
+          return berkeleyColors[i % berkeleyColors.length];
+        })
+        .attr("font-weight", 600)
+        .style("font-family", "Source Sans Pro, Helvetica, sans-serif")
+
+
+
+
+
+
+      force.on("tick", function (e) {
+        var q = d3.geom.quadtree(nodes),
+          i = 0,
+          n = nodes.length;
+
+        while (++i < n) q.visit(collide(nodes[i]));
+
+        svg.selectAll("circle")
+          .attr("cx", function (d) { return d.x; })
+          .attr("cy", function (d) { return d.y; });
+
+
+        svg.selectAll("text")
+          .attr("x", function (d) { return d.x; })
+          .attr("y", function (d) { return d.y; });
+
+      });
+
+      svg.on("mousemove", function () {
+        var p1 = d3.mouse(this);
+        root.px = p1[0];
+        root.py = p1[1];
+        force.resume();
+      });
+
+      function collide(node) {
+        var r = node.radius + 100,
+          nx1 = node.x - r,
+          nx2 = node.x + r,
+          ny1 = node.y - r,
+          ny2 = node.y + r;
+        return function (quad, x1, y1, x2, y2) {
+          if (quad.point && (quad.point !== node)) {
+            var x = node.x - quad.point.x,
+              y = node.y - quad.point.y,
+              l = Math.sqrt(x * x + y * y),
+              r = node.radius + quad.point.radius;
+            if (l < r) {
+              l = (l - r) / l * .5;
+              node.x -= x *= l;
+              node.y -= y *= l;
+              quad.point.x += x;
+              quad.point.y += y;
+            }
+          }
+          return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+        };
+      }
+    }
+
+  </script>

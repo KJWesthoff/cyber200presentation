@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<body>
+  <script src="//d3js.org/d3.v3.min.js"></script>
+  <script>
+
+    var width = 960,
+      height = 500;
+
+
+    // Berkeley blue '#003262'
+    var berkeleyColors = ['white', '#FDB515', '#3B7EA1', '#C4820E', '#D9661F', '#EE1F60', '#ED4E33', '#6C3302', '#DDD5C7', '#00B0DA', '#00A598', '#46535E', '#B9D3B6', '#CFDD45', '#859438', '#584F29']
+
+
+
+
+    // main fetch and run
+    const getData = async () => {
+      const data = await d3.json("Standards.json", (d) => {
+        columnCategory(d)
+
+
+
+
+      })
+
+    }
+    getData()
+
+    var svg = d3.select("body").append("svg")
+      .attr("width", width)
+      .attr("height", height);
+
+
+
+    const columnCategory = function (data) {
+
+      var industries = data.map(d => d.industry)
+      industries = [... new Set(industries)]
+
+      var types = data.map(d => d.type)
+      types = [... new Set(types)]
+
+      var noColumns = types.length
+
+      const xSpacing = width / (noColumns + 1)
+
+
+      // nodes from data
+      var nodes = data.map(function (d) {
+
+        return {
+          text: d.name,
+          link: d.link,
+          type: d.type,
+          industry: d.industry,
+          radius: Math.random() * 12 + 25
+
+        }
+      });
+
+
+      // Print the column categories
+      let i = 0
+      for (col of types) {
+        i = i + 1
+        heading = svg.append("text")
+          .text(col)
+          .attr("x", i * xSpacing)
+          .attr("y", 50)
+          .style("font-size", 35)
+          .style("text-anchor", "middle")
+          .attr("fill", 'white')
+          .style("font-family", "Source Sans Pro, Helvetica, sans-serif")
+      }
+
+      // Print item in each category
+      i = 0
+      for (col of types) {
+        i = i + 1
+        // filter nodes for each type
+        colItems = nodes.filter(n => n.type == col)
+
+        j = 0 // offset
+        for (c of colItems) {
+          j = j + 1
+         
+          svg.append("text")
+            .text(c.text)
+            .attr("x", i * xSpacing)
+            .attr("y", 70 + j * 15)
+            .style("font-size", 15)
+            .style("text-anchor", "middle")
+            .attr("stroke-width", 1)
+            .attr("stroke", '#FDB515')
+            .style("stroke-dasharray", d => {
+
+              if (c.type == 'framework') {
+                return ("3,2")
+              }
+            }) // make the stroke dashed
+            .style("fill", berkeleyColors[j % berkeleyColors.length])
+            .attr("font-weight", 600)
+            .style("font-family", "Source Sans Pro, Helvetica, sans-serif")
+            //.on("mouseover", c => mouseover(c))
+            //.on("mousemove", c => mousemove(c))
+            //.on("mouseleave", c => mouseleave(c))
+
+
+
+
+        }
+
+
+      }
+
+
+      const Tooltip = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .attr("width", "20px")
+        .style("z-index", "10")
+        .style("font-family", "Source Sans Pro, Helvetica, sans-serif")
+        .style("position", "absolute")
+        .style("visibility", "hidden")
+        .style("background-color", "white")
+        .style("border", "solid")
+        .style("border-width", "1px")
+        .style("border-radius", "5px")
+        .style("padding", "11px")
+        .style("width", "20%")
+        .style("display", "flex")
+        .style("flex-wrap", "wrap")
+        
+
+
+      var mouseover = function (d) {
+        console.log(" - - - - ")
+        console.log(d)
+        console.log(" - - - - ")
+
+        Tooltip
+          .style("visibility", "visible")
+          .html("<h2>"+ d + "</h2>")
+          
+          //.html("<b>" + d.link + "</b>" + "<hr>")
+
+      }
+      var mousemove = function (d) {
+        console.log("Mouse move running")
+        Tooltip
+          .style("left", (d3.event.pageX + 10) + "px")
+          .style("top", (d3.event.pageY - 10) + "px")
+       
+      }
+      var mouseleave = function (d) {
+        console.log("Mouse leave running")
+        Tooltip
+          .style("visibility", "hidden")
+
+      }
+
+
+
+      function tooltip_show(d) {
+        if (d.Control) {
+          console.log(d.Control)
+          tooltip.html = d.Control
+          tooltip.style("visibility", "visible")
+          console.log(tooltip)
+        }
+
+
+      }
+
+
+
+
+
+    }
+
+
+  </script>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<body>
+  <div id="content">
+    <svg width="700" height="900">
+      <g transform="translate(50, 200)"></g>
+    </svg>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.min.js"></script>
+
+  <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+
+  <script>
+
+    var width = 960,
+      height = 900;
+
+
+    // Berkeley blue '#003262'
+    var berkeleyColors = ['white', '#FDB515', '#3B7EA1', '#C4820E', '#D9661F', '#EE1F60', '#ED4E33', '#6C3302', '#DDD5C7', '#00B0DA', '#00A598', '#46535E', '#B9D3B6', '#CFDD45', '#859438', '#584F29']
+
+
+
+
+    // main fetch and run
+    const getData = async () => {
+      const data = await fetch("Standards.json")
+      const d = await data.json()
+
+      bubbles(d)
+
+      console.log(occurence(d))
+
+    }
+
+
+    getData()
+
+    
+
+    const bubbles = function (data) {
+
+
+      var industries = data.map(d => d.industry)
+      industries = [... new Set(industries)]
+
+
+      var width = 600, height = 900;
+
+
+      // initialize/condition/add some random start data
+      var nodes = data.map(function (d, i) {
+
+        var velocity = Math.random() * 2 + 1
+        var angle = Math.random() * 360
+        var industryCount = data.reduce((counter, obj) => obj.industry === d.industry ? counter += 1 : counter, 0)
+
+
+        return {
+          text: d.name,
+          link: d.link,
+          type: d.type,
+          typeCount: data.reduce((counter, obj) => obj.type === d.type? counter += 1 : counter, 0),
+          industry: d.industry,
+          industryCount: industryCount,
+          radius: industryCount*5+15,
+          
+        }
+      });
+
+      
+      
+
+
+      var xCenter = [width/2];
+
+
+      var simulation = d3.forceSimulation(nodes)
+        .force('charge', d3.forceManyBody().strength(5))
+        .force('x', d3.forceX().x(function (d) {
+          return xCenter[0];
+        }))
+        .force('y', d3.forceY().y(function (d) {
+          return height/8;
+        }))
+        .force('collision', d3.forceCollide().radius(function (d) {
+          return d.radius;
+        }))
+        .on('tick', ticked);
+
+      function ticked() {
+        var u = d3.select('svg g')
+          .selectAll('circle')
+          .data(nodes)
+          .join('circle')
+          .attr('r', function (d) {
+            return d.radius;
+          })
+          .style('fill', function (d,i) {
+            return berkeleyColors[i%berkeleyColors.length];
+          })
+          .attr('cx', function (d) {
+            return d.x;
+          })
+          .attr('cy', function (d) {
+            return d.y;
+          });
+      }
+    }
+
+
+    const occurence = (arr) => {
+      let arrLength = arr.length
+
+      let count = {}
+
+      for (let i = 0; i < arrLength; i++) {
+        let num = arr[i]
+        count[num] = count[num] ? count[num] + 1 : 1
+      }
+    }
+
+
+
+    // var svg = d3.select("body").append("svg")
+    //   .attr("width", width)
+    //   .attr("height", height);
+
+
+
+    // const columnCategory = function (data) {
+
+    //   var industries = data.map(d => d.industry)
+    //   industries = [... new Set(industries)]
+
+    //   var types = data.map(d => d.type)
+    //   types = [... new Set(types)]
+
+    //   var noColumns = industries.length
+
+    //   const ySpacing = height / (noColumns + 1)
+
+
+    //   // nodes from data
+    //   var nodes = data.map(function (d) {
+
+    //     return {
+    //       text: d.name,
+    //       link: d.link,
+    //       type: d.type,
+    //       industry: d.industry,
+    //       radius: Math.random() * 12 + 25
+
+    //     }
+    //   });
+
+
+    //   // Print the column categories
+    //   let i = 0
+    //   for (col of industries) {
+    //     i = i + 1
+    //     heading = svg.append("text")
+    //       .text(col)
+    //       .attr("y", i * ySpacing)
+    //       .attr("x", 50)
+    //       .style("font-size", 15)
+    //       .style("text-anchor", "middle")
+    //       .attr("fill", 'white')
+    //       .style("font-family", "Source Sans Pro, Helvetica, sans-serif")
+    //   }
+
+    //   // Print item in each category
+    //   i = 0
+    //   for (col of industries) {
+    //     i = i + 1
+    //     // filter nodes for each type
+    //     colItems = nodes.filter(n => n.industry == col)
+
+    //     j = 0 // offset
+    //     for (c of colItems) {
+    //       j = j + 1
+    //       svg.append("text")
+    //         .text(c.text)
+    //         .attr("y", i * ySpacing)
+    //         .attr("x", 70 + j * 15)
+    //         .style("font-size", 15)
+    //         .style("text-anchor", "middle")
+    //         .attr("stroke-width", 1)
+    //         .attr("stroke", '#FDB515')
+    //         .style("stroke-dasharray", d => {
+
+    //           if (c.type == 'framework') {
+    //             return ("3,2")
+    //           }
+    //         }) // make the stroke dashed
+    //         .style("fill", berkeleyColors[j % berkeleyColors.length])
+    //         .attr("font-weight", 600)
+    //         .style("font-family", "Source Sans Pro, Helvetica, sans-serif")
+
+
+
+
+    //     }
+
+
+    //   }
+
+
+
+
+
+    // }
+    // var svg = d3.select("body").append("svg")
+    //   .attr("width", width)
+    //   .attr("height", height);
+
+
+
+
+  </script>
